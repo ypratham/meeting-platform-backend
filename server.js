@@ -14,7 +14,9 @@ const server = require("http").createServer(app);
 const { Server: SocketServer } = require("socket.io");
 
 const io = new SocketServer(server, {
-  cors: true,
+  cors: {
+    origin: "*",
+  },
 });
 
 const { ExpressPeerServer } = require("peer");
