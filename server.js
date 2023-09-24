@@ -18,7 +18,6 @@ const io = new SocketServer(server, {
 });
 
 const { ExpressPeerServer } = require("peer");
-const { Server } = require("http");
 
 const peerServer = ExpressPeerServer(server);
 
